@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 @app.route('/aws_flask_app', methods=['GET'])
-def aws_flask_app(name):
+def aws_flask_app(aws_flask_app):
     return "AWS_FLASK_APP!"
 
 
