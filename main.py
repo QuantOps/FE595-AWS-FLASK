@@ -3,9 +3,9 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/aws_flask_app/<name>', methods=['GET', 'POST'])
-def aws_flask_app(name):
-    return "Hello, {}!, I'm the AWS_FLASK_APP!".format(name)
+@app.route('/', methods=['GET', 'POST'])
+def aws_flask_app():
+    return "Hello! I'm the AWS_FLASK_APP!"
 
 
 if __name__ == '__main__':
